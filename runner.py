@@ -789,7 +789,7 @@ class Runner:
             docker_run_string.append(self.clean_image_name(service['image']))
 
             if 'command' in service:  # must come last
-                docker_run_string.append(service['command'])
+                docker_run_string.extend(service['command'].split())
 
             print(f"Running docker run with: {' '.join(docker_run_string)}")
 
