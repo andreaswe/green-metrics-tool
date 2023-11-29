@@ -778,6 +778,10 @@ class Runner:
                 docker_run_string.append('--net')
                 docker_run_string.append(self.__networks[0])
 
+            if 'entrypoint' in service:
+                docker_run_string.append('--entrypoint')
+                docker_run_string.append(service['entrypoint'])
+
 
             if 'pause-after-phase' in service:
                 self.__services_to_pause_phase[service['pause-after-phase']] = self.__services_to_pause_phase.get(service['pause-after-phase'], []) + [container_name]
