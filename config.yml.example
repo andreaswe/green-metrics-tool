@@ -117,12 +117,12 @@ measurement:
 #        resolution: 100
       #-- This is a default configuration. Please change this to your system!
 #        CPUChips: 1
-#        HW_CPUFreq: 3200
-#        CPUCores: 4
+#        HW_CPUFreq: 2500
+#        CPUCores: 2
 #        CPUThreads: 4
-#        TDP: 65
-#        HW_MemAmountGB: 16
-#        Hardware_Availability_Year: 2011
+#        TDP: 240
+#        HW_MemAmountGB: 8
+#        Hardware_Availability_Year: 2017
   #--- END
 
 
